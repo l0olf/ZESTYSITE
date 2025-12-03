@@ -1,0 +1,19 @@
+# Arquivos de Sistema Operacional (Lixo)
+.DS_Store
+Thumbs.db
+
+# Logs de erro do PHP (Se tiver)
+error_log
+*.log
+
+# Dependências (Se você usar no futuro)
+node_modules/
+vendor/
+
+# --- SEUS BLOQUEIOS ESPECÍFICOS ---
+
+# Ignorar pasta de configuração (Senhas de DB, etc)
+/config/
+
+# Ignorar processador de formulário (Lógica de email/API)
+form-handler.php

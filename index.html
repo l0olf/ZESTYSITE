@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZESTY Site</title>
+  <link rel="stylesheet" href="style.css?v=1.0.9" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="/img/logobg.svg" type="image/x-icon">
+</head>
+
+<body>
+  <section id="home" class="home">
+    <div class="elipse"></div>
+
+    <div class="container">
+      <!-- MENU ZESTY -->
+<header class="menu-wrapper">
+  <div class="menu vidro">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="/img/logo.svg" alt="ZESTY" />
+    </div>
+
+    <!-- LINKS DESKTOP -->
+    <nav class="menu-itens" id="menuDesktop">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Serviços</a>
+      <a href="#faq">FAQ</a>
+      <a href="#formulario" class="btncontatomenu">Contato</a>
+    </nav>
+
+    <!-- BOTÃO HAMBURGUER MOBILE -->
+    <button id="menuToggle" class="hamburger">
+      <i class="bi bi-list"></i>
+    </button>
+  </div>
+
+  <!-- MENU MOBILE DROPDOWN -->
+  <nav class="menu-mobile vidro" id="menuMobile">
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#como-funciona">Serviços</a>
+    <a href="#faq">FAQ</a>
+    <a href="#formulario" class="btncontatomenu">Contato</a>
+  </nav>
+</header>
+
+    </div>
+
+
+    <!-- Hero Content -->
+    <div class="container d-flex">
+      <div class="mycontainer containerE containertitle">
+        <h1 class="title">Tráfego e IA que vendem por você <strong>24h</strong> por dia</h1>
+        <p class="txt">
+          A <b>Zesty</b> envia leads qualificados através de mídia paga e clona seu melhor
+          vendedor utilizando inteligência artificial, de forma 100% automatizada.
+        </p>
+        <button class="mybtn vidro d-flex btncontato">
+          Agende sua consultoria Gratuita
+          <div class="seta"><img src="/img/seta.svg" /></div>
+        </button>
+      </div>
+
+      <div class="mycontainer containerD ">
+        <img class="celular" src="/img/IMG CELULAR.png" />
+      </div>
+    </div>
+
+    <!-- Parceiros -->
+    <p class="txtparceiros">ALGUNS DE NOSSOS PARCEIROS</p>
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+        <img src="/img/parceiro1.svg" class="logoparceiro" />
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="formulario">
+    <div class="container">
+      <div class="form-content d-flex">
+        <!-- lado esquerdo -->
+        <div class="mycontainer contaiderE containerForms">
+          <h3 class="title formtitle">Você Pode Começar Agora Mesmo...</h3>
+          <div class="infoforms d-flex infos1">
+            <div class="iconinfo vidro">
+              <p>✉️</p>
+            </div>
+            <div class="txtinfoforms">
+              <h6>Envie suas informações</h6>
+              <p>Preencha o formulário com seus dados para agendar uma consultoria gratuita com um de nossos
+                especialistas.</p>
+            </div>
+          </div>
+          <div class="infoforms d-flex infos2">
+            <div class="iconinfo vidro">
+              <p>📆</p>
+            </div>
+            <div class="txtinfoforms">
+              <h6>Agende sua consultoria</h6>
+              <p>Em até 24 horas, um de nossos especialistas fará uma ligação para agendar uma call sem compromisso,
+                para entendermos exatamente como podemos alavancar as vendas do seu negócio.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- lado direito -->
+        <div class="mycontainer contaiderD containerForms">
+          <div class="elipse2"></div>
+          <div class="form-wrapper vidro">
+            <form id="zesty-form" class="zesty-form">
+              <input type="text" name="nome" placeholder="Seu nome" required />
+              <input type="email" name="email" placeholder="Seu melhor e-mail" required />
+              <input type="text" name="empresa" placeholder="Nome da sua empresa" required />
+              <input type="tel" name="telefone" placeholder="Seu telefone (DDD + Whatsapp)" required />
+
+              <select name="faturamento" required>
+                <option value="" disabled selected>Qual é o seu faturamento mensal?</option>
+                <option value="ate_10k">Até R$10 mil</option>
+                <option value="10k_50k">R$10 mil a R$50 mil</option>
+                <option value="acima_50k">Acima de R$50 mil</option>
+              </select>
+
+              <select name="nicho" required>
+                <option value="" disabled selected>Qual é o seu nicho?</option>
+                <option value="servicos">Serviços</option>
+                <option value="infoprodutos">Infoprodutos</option>
+                <option value="ecommerce">E-commerce</option>
+              </select>
+
+              <button type="submit" class="gradient-btn">Enviar</button>
+
+              <p id="mensagem-status" style="text-align: center; font-size: 14px; color: #111;"></p>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sobre">
+    <div class="container d-flex">
+      <div class="contanerE">
+        <h6 class="subtgradient">
+          COMO NÓS TRABALHAMOS
+        </h6>
+        <h3 class="title formtitle">Resultados em escala, sem complicação.</h3>
+      </div>
+      <div class="contanerD containerDsobre">
+        <p class="txtsobre">Com tráfego de performance e IA integrada, ativamos sua marca 24h por dia. Simples, rápido e
+          direto ao resultado.</p>
+        <button class="gradient-btn comecaragora">Começar agora</button>
+      </div>
+    </div>
+    <div class="container containersobreinfos d-flex">
+      <div class="sobreinfos">
+        <div class="icone-com-seta">
+          <div class="circulo-icone">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div class="linha-com-seta"></div>
+        </div>
+        <div class="txtinfos">
+          <h6>IA no comando</h6>
+          <p>A inteligência da ZESTY analisa, entrega e otimiza seus anúncios em tempo real — enquanto você foca no seu
+            negócio.
+          </p>
+        </div>
+      </div>
+      <div class="sobreinfos">
+        <div class="icone-com-seta">
+          <div class="circulo-icone">
+            <i class="bi bi-robot"></i>
+          </div>
+          <div class="linha-com-seta"></div>
+        </div>
+        <div class="txtinfos">
+          <h6>Resultados sem pausa</h6>
+          <p>Com nossa operação, você tem ajustes contínuos, relatórios claros e evolução constante sem pedir nada.
+          </p>
+        </div>
+      </div>
+      <div class="sobreinfos">
+        <div class="icone-com-seta">
+          <div class="circulo-icone">
+            <i class="bi bi-bar-chart-fill"></i>
+          </div>
+        </div>
+        <div class="txtinfos">
+          <h6>Assine & acelere</h6>
+          <p>Sem burocracia ou contratos longos. Entrou, rodou. A ZESTY começa a atrair clientes pra você no mesmo dia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="depoimentos" class="py-5 px-3 px-md-5">
+    <div class="text-center mb-4">
+      <p class="subtgradient fw-semibold text-uppercase mb-1">Depoimentos</p>
+      <h2 class="title">Estão falando de nós,<br />e muito bem...</h2>
+    </div>
+
+    <div id="carouselDepoimentos" class="carousel slide depoimento-wrapper mx-auto" data-bs-ride="carousel"
+      data-bs-interval="5000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex vidro depoimento-box">
+            <div class="containerE">
+              <img class="logodepoimento" width="100px" src="/img/logotipo.svg" alt="icon">
+              <h5 class="headdepoimento">"ZESTY is the best digital agency i have ever seen! Highly Recommended!</h5>
+              <p class="txtdepoimento">I recently hired Ideapeel for a custom web development project and couldn't be
+                happier with the results. The team was able to bring my unique ideas to life and create a website that
+                truly stands out.</p>
+
+              <strong class="name">Diana Loreza</strong>
+              <small class="empresaname">Director of Gymstory</small>
+
+            </div>
+            <div class="containerD">
+              <img src="/img/logobg.svg" class="rounded-circle depoimento-img" alt="Cliente feliz" />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex vidro depoimento-box">
+            <div class="containerE">
+              <img class="logodepoimento" width="50px" src="/img/logobg.svg" alt="icon">
+              <h5 class="headdepoimento">ZESTY is the best digital agency i have ever seen! Highly Recommended!</h5>
+              <p class="txtdepoimento">I recently hired Ideapeel for a custom web development project and couldn't be
+                happier with the results. The team was able to bring my unique ideas to life and create a website that
+                truly stands out.</p>
+
+              <strong class="name">Diana Loreza</strong>
+              <small class="empresaname">Director of Gymstory</small>
+
+            </div>
+            <div class="containerD">
+              <img src="/img/logobg.svg" class="rounded-circle depoimento-img" alt="Cliente feliz" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Botões -->
+      <button class="carousel-control-prev custom-control" type="button" data-bs-target="#carouselDepoimentos"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon vidro-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next custom-control" type="button" data-bs-target="#carouselDepoimentos"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon vidro-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+    <div class="elipse3"></div>
+  </section>
+  <section id="como-funciona" class="py-5 px-3 px-md-5">
+
+    <div class="container d-flex containerscomofunciona">
+      <div class="contanerE containercomofuncionaE">
+        <h6 class="subtgradient">
+          COMO FUNCIONA
+        </h6>
+        <h3 class="title">Marketing e vendas no piloto automático.</h3>
+        <button class="mybtn vidro btncomofunciona desktop btncontato">
+          Quero vender com IA 🤖
+          <div class="seta"><img src="/img/seta.svg" /></div>
+        </button>
+      </div>
+      <div class="contanerD containercomofuncionaD">
+        <p class="txtsobre txtcomofunciona">Da captação à conversão, nós automatizamos tudo pra sua marca vender sem
+          depender de ninguém.</p>
+        <button class="mobile mybtn gradient-btn btncomofunciona btncontato">
+          Quero vender com IA 🤖
+        </button>
+
+      </div>
+    </div>
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5">
+
+
+
+      <!-- Etapas -->
+      <div class="container mt-5">
+        <div class="row text-center text-lg-start stepss">
+          <div class="col-md-4 mb-5 stepp">
+            <img src="/img/camera.svg" class="mb-3" width="42" alt="Captação" />
+            <p><strong class="step">1. Captação</strong></p>
+            <p class="textstep">
+              Roteirizamos seus anúncios com base no seu negócio. Criamos ativos que alimentam seu funil e treinam sua
+              IA
+              de vendas.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 stepp">
+            <img src="/img/engrenagem.svg" class="mb-3 engrenagem" width="42" alt="Estrutura" />
+            <p><strong class="step">2. Estrutura</strong></p>
+            <p class="textstep">
+              Editamos os criativos, configuramos as campanhas e conectamos seu agente de IA. Sua operação começa
+              rodando
+              em poucos dias.
+            </p>
+          </div>
+          <div class="col-md-4 mb-5 stepp">
+            <img src="/img/raio.svg" class="mb-3" width="42" alt="Acompanhamento" />
+            <p><strong class="step step3">3. Acompanhamento</strong></p>
+            <p class="textstep">
+              Otimização constante, escala controlada e relatório em tempo real. A ZESTY acompanha e turbina sua
+              performance diariamente.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="capacidades" class="capacidades-section">
+    <div class="container text-center">
+      <h6 class="subtgradient">CAPACIDADES</h6>
+      <h2 class="title">Nós podemos te ajudar com...</h2>
+
+      <div class="tag-grid">
+        <div class="tag" data-x="0" data-y="0">Social media</div>
+        <div class="tag" data-x="1" data-y="0">Planejamento estratégico</div>
+        <div class="tag" data-x="2" data-y="0">Programação de mídia paga</div>
+        <div class="tag" data-x="3" data-y="0">Criação de criativos</div>
+        <div class="tag" data-x="4" data-y="0">Atendimento com IA</div>
+        <div class="tag" data-x="5" data-y="0">Acompanhamento 24h</div>
+        <div class="tag" data-x="1" data-y="1">LandingPage</div>
+        <div class="tag" data-x="2" data-y="1">Digital ads</div>
+      </div>
+    </div>
+  </section>
+  <section id="nossoprocesso">
+    <div class="container containerprocesso">
+      <h6 class="subtgradient">NOSSO PROCESSO</h6>
+      <h3 class="title titleprocesso">Ative sua operação de vendas em 3 passos rápidos</h3>
+      <button class="gradient-btn">Quero começar agora 🚀</button>
+      <div class="container d-flex steps">
+        <div class="stepprocesso stepprocesso1">
+          <h6>✍️ Preencha o formulário nessa pagina</h6>
+          <p>Em menos de 2 minutos, entendemos seu momento de negócio e o que precisa ser feito pra escalar agora.</p>
+        </div>
+        <div class="stepprocesso">
+          <h6>📲 Receba nosso contato</h6>
+          <p>Em até 24h, um especialista entra em contato com você pra montar o plano ideal e agendar sua consultoria.
+          </p>
+        </div>
+        <div class="stepprocesso">
+          <h6>👔 Esteja rodando em 7 dias</h6>
+          <p>Com nosso modelo de automação e tráfego, sua estrutura já começa a funcionar na primeira semana.</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="container">
+      <div class="w-full max-w-2xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold text-black">FAQ's</h2>
+        <p class="text-sm text-gray-500 mt-2">Algumas das perguntas que ouvimos todos os dias.</p>
+
+        <div class="mt-10 space-y-4 text-left">
+          <!-- FAQ Item -->
+          <div class="bg-[#1E1E1E] rounded-xl px-5 py-4">
+            <button onclick="toggleFAQ(0)" class="w-full flex justify-between items-center gap-3">
+              <span class="text-white font-medium flex-1 text-left">
+                Vocês gerenciam anúncios em quais plataformas?
+              </span>
+              <span
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-r from-[#3B3BE0] to-[#9D00EF] shrink-0">
+                <svg id="icon-0" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                  stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+            <div id="answer-0" class="mt-3 text-sm text-gray-300 hidden">
+              Atendemos Google Ads, Meta Ads (Instagram e Facebook), TikTok Ads e LinkedIn. Onde estiver seu público, a
+              gente entra com estratégia e performance.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="bg-[#1E1E1E] rounded-xl px-5 py-4">
+            <button onclick="toggleFAQ(1)" class="w-full flex justify-between items-center gap-3">
+              <span class="text-white font-medium flex-1 text-left">
+                Como funciona a automação com IA que vocês oferecem?
+              </span>
+              <span
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-r from-[#3B3BE0] to-[#9D00EF] shrink-0">
+                <svg id="icon-1" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                  stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+            <div id="answer-1" class="mt-3 text-sm text-gray-300 hidden">
+              A gente configura fluxos inteligentes via WhatsApp, Instagram e até chatbot em site. O cliente interage
+              com um atendimento automatizado que converte — 24/7.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="bg-[#1E1E1E] rounded-xl px-5 py-4">
+            <button onclick="toggleFAQ(2)" class="w-full flex justify-between items-center gap-3">
+              <span class="text-white font-medium flex-1 text-left">
+                Qual o valor mínimo pra começar a rodar tráfego?
+              </span>
+              <span
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-r from-[#3B3BE0] to-[#9D00EF] shrink-0">
+                <svg id="icon-2" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                  stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+            <div id="answer-2" class="mt-3 text-sm text-gray-300 hidden">
+              Recomendamos a partir de R$ 1.000/mês em mídia. Com menos que isso, fica difícil escalar. Mas se tiver
+              verba e produto, a gente faz acontecer.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="bg-[#1E1E1E] rounded-xl px-5 py-4">
+            <button onclick="toggleFAQ(3)" class="w-full flex justify-between items-center gap-3">
+              <span class="text-white font-medium flex-1 text-left">
+                Como sei que não es tou jogando dinheiro fora?
+              </span>
+              <span
+                class="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-r from-[#3B3BE0] to-[#9D00EF] shrink-0">
+                <svg id="icon-3" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                  stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+            <div id="answer-3" class="mt-3 text-sm text-gray-300 hidden">
+              A Zesty trabalha com dados. Cada real é acompanhado de métricas, testes e otimizações constantes. O que
+              não performa, a gente corta. Simples assim.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="cta-wrapper">
+    <div class="cta-box">
+      <div class="elipse4"></div>
+      <h2 class="cta-title">
+        <span>Junte-se à revolução da</span>
+        <span>performance digital.</span>
+      </h2>
+      <p class="cta-sub">
+        Transforme cliques em vendas com tráfego inteligente e IA 24h por dia.
+      </p>
+      <button class="gradient-btn mt-4">Entrar em contato</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Lado esquerdo -->
+        <div class="footer-col">
+          <img src="/img/logotipo.svg" width="30%" alt="ZESTY">
+          <p>
+            Com a ZESTY, sua operação de mídia nunca dorme. IA, tráfego e escala — no automático, do jeito certo.
+          </p>
+        </div>
+
+        <!-- Lado direito -->
+        <div class="footer-col footer-right">
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <div class="footer-contact">
+            <p><i class="bi bi-telephone"></i> (14) 99720-7240</p>
+            <p><i class="bi bi-envelope"></i> suporte@zestycompany.com</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Contato</a>
+          <a href="#">Serviços</a>
+          <a href="#">FAQ</a>
+        </div>
+        <p class="copyright">© 2025 Zesty Company - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+
+
+    document.getElementById("zesty-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+      const statusMsg = document.getElementById("mensagem-status");
+
+      try {
+        const response = await fetch("form-handler.php", {
+          method: "POST",
+          body: formData
+        });
+
+        const resultText = await response.text();
+        statusMsg.innerText = resultText;
+        statusMsg.style.display = "block"; // exibe a mensagem
+        form.reset();
+      } catch (error) {
+        statusMsg.innerText = "Erro ao enviar. Tente novamente.";
+        statusMsg.style.display = "block";
+        console.error(error);
+      }
+    });
+
+    document.querySelectorAll(".tag").forEach(tag => {
+      const x = tag.dataset.x || 0;
+      const y = tag.dataset.y || 0;
+      tag.style.setProperty('--x', x);
+      tag.style.setProperty('--y', y);
+    });
+
+    function toggleFAQ(index) {
+      const answer = document.getElementById(`answer-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+      answer.classList.toggle("hidden");
+      icon.classList.toggle("rotate-180");
+    }
+
+  </script>
+
+  <script>
+    function escalarMenu() {
+      const menu = document.getElementById('menuMobile');
+      const wrapper = menu.closest('.menu-wrapper');
+
+      const larguraMaxima = 500; // px desejado para layout ideal
+      const larguraTela = window.innerWidth;
+      const escala = Math.min(1, larguraTela / larguraMaxima);
+
+      wrapper.style.transform = `scale(${escala})`;
+    }
+
+    window.addEventListener('resize', escalarMenu);
+    window.addEventListener('DOMContentLoaded', escalarMenu);
+  </script>
+
+  <script>
+  const toggleBtn = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('menuMobile');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.btncontato').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById('formulario');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+
+
+
+</body>
+
+</html>
