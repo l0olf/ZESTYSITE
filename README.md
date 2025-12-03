@@ -8,7 +8,7 @@
 ![Badge JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Badge Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-![Preview Zesty](./assets/preview.png)
+![Preview Zesty](./img/preview.png)
 
 ## 🏢 Sobre o Projeto
 
